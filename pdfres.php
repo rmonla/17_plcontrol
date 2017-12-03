@@ -20,13 +20,14 @@
 	
 		$pdf = new FPDF();
 		$pdf->AddPage();
-		$pdf->Image('_img/formHead.png',28,30,20);
+		$pdf->Image('_img/formHead.png',28,8,100);
+		// $pdf->Image('_img/formHead.png',28,8,20);
 		// $pdf->Image('_img/logoUTN100.png',28,8,20);
 		$pdf->Ln(24);
-		$pdf->SetFont('Arial','',10);
-		$pdf->Cell(0, 6, '         Ministerio de Educacion', 0, 1, 'L');
-		$pdf->Cell(0, 6, 'Universidad Tecnologica Nacional', 0, 1, 'L');
-		$pdf->Cell(0, 6, '      Facultad Regional La Rioja', 0, 1, 'L');
+		// $pdf->SetFont('Arial','',10);
+		// $pdf->Cell(0, 6, '         Ministerio de Educacion', 0, 1, 'L');
+		// $pdf->Cell(0, 6, 'Universidad Tecnologica Nacional', 0, 1, 'L');
+		// $pdf->Cell(0, 6, '      Facultad Regional La Rioja', 0, 1, 'L');
 		$pdf->Ln(10);
 		$pdf->SetFont('Arial','B',30);
 		$title = 'DTIC';
