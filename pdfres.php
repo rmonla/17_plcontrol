@@ -1,4 +1,16 @@
 <?php
+	/*******************************************************************************
+	* pdfres.php                                                                   *
+	*                                                                              *
+	* Versión:  1.14                                                               *
+	* Fecha:    2017-12-01                                                         *
+	* Proyecto: 17_plcontrol                                                       *
+	* GitHub:   https://github.com/rmonla/17_plcontrol                             *
+	* Web:      https://immense-tor-16114.herokuapp.com                            *
+	* Author:   Ricardo N. MONLA (rmonla@gmail.com)                                *
+	*******************************************************************************/
+
+
 	$vinicia     = utf8_decode( ucwords( strtolower( $_POST['vinicia'] )));
 	$vhora       = $_POST['vhora'];
 	$vfecha      = date( "Y-m-d", strtotime( $_POST['vfecha'] ));
@@ -8,7 +20,7 @@
 	
 		$pdf = new FPDF();
 		$pdf->AddPage();
-		$pdf->Image('_img/formHead.png',28,8,20);
+		$pdf->Image('_img/formHead.png',28,30,20);
 		// $pdf->Image('_img/logoUTN100.png',28,8,20);
 		$pdf->Ln(24);
 		$pdf->SetFont('Arial','',10);
